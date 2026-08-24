@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ABOUT ME</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b0b0f;
+            color: white;
+            min-height: 100vh;
+        }
+
+        /* ---------- HEADER ---------- */
+
+        header {
+            text-align: center;
+            padding: 70px 20px 40px;
+        }
+
+        header h1 {
+            font-size: 50px;
+            letter-spacing: 4px;
+        }
+
+        header p {
+            margin-top: 15px;
+            color: #999;
+            font-size: 18px;
+        }
+
+        /* ---------- WORKS ---------- */
+
+        .works {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+
+            padding-bottom: 80px;
+        }
+
+        /* ---------- CARD ---------- */
+
+        .card {
+            position: relative;
+            background: #15151c;
+            border-radius: 15px;
+            overflow: hidden;
+
+            text-decoration: none;
+            color: white;
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+
+            border: 1px solid #24242d;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+
+            box-shadow:
+                0 15px 40px rgba(0, 0, 0, 0.5),
+                0 0 25px rgba(120, 80, 255, 0.2);
+        }
+
+        /* ---------- IMAGE ---------- */
+
+        .card img {
+            width: 100%;
+            height: 220px;
+
+            object-fit: cover;
+
+            display: block;
+
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.08);
+        }
+
+        /* ---------- IMAGE OVERLAY ---------- */
+
+        .overlay {
+            position: absolute;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 220px;
+
+            background: linear-gradient(
+                to bottom,
+                transparent,
+                rgba(0, 0, 0, 0.7)
+            );
+
+            opacity: 0;
+
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover .overlay {
+            opacity: 1;
+        }
+
+        /* ---------- TEXT ---------- */
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h2 {
+            font-size: 21px;
+            margin-bottom: 8px;
+        }
+
+        .card-content p {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* ---------- BUTTON EFFECT ---------- */
+
+        .visit {
+            display: inline-block;
+
+            margin-top: 15px;
+
+            color: #9d7cff;
+            font-size: 14px;
+
+            transition: color 0.2s ease;
+        }
+
+        .card:hover .visit {
+            color: white;
+        }
+
+        /* ---------- FOOTER ---------- */
+
+        footer {
+            text-align: center;
+            padding: 30px;
+
+            color: #666;
+
+            border-top: 1px solid #1c1c22;
+        }
+
+        /* ---------- MOBILE ---------- */
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 35px;
+            }
+
+            header p {
+                font-size: 15px;
+            }
+
+            .works {
+                width: 92%;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>RAPOL YT</h1>
+
+        <p>
+            لدي قناتا يوتيوب فقط 🎶
+        </p>
+
+    </header>
+
+
+    <!-- WORKS -->
+
+    <main class="works">
+
+
+        <!-- WORK 1 -->
+
+        <a
+            class="card"
+            href="https://www.youtube.com/shorts/EVWGeX42EKM"
+            target="_blank"
+        >
+
+            <img
+                src="https://i.ytimg.com/an_webp/EVWGeX42EKM/mqdefault_6s.webp?du=3000&sqp=CJbOsNQG&rs=AOn4CLC4rZvOz_FVvDt0oZqO0Xf9JBlyOw"
+                alt="My YouTube Project"
+            >
+
+            <div class="overlay"></div>
+
+            <div class="card-content">
+
+                <h2>STORY OF GOG 👾</h2>
+
+                <p>
+                    يشرح الفيديو قصة شركة جي او جي من البداية حتى الاستقلال المالي.
+                </p>
+
+                <span class="visit">
+                    PLAY →
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- WORK 2 -->
+
+        <a
+            class="card"
+            href="https://youtu.be/dGzMddAeYxk?si=ojzQS8hoEcf_Ezgm"
+            target="_blank"
+        >
+
+            <img
+                src="https://i.ytimg.com/an_webp/dGzMddAeYxk/mqdefault_6s.webp?du=3000&sqp=CPeGsdQG&rs=AOn4CLAcJEOj6QvIL09Tc9ns_MPC3dR1Zw"
+                alt="Website Project"
+            >
+
+            <div class="overlay"></div>
+
+            <div class="card-content">
+
+                <h2>TOP 5 GAMES 📼 </h2>
+
+                <p>
+                   لقد تكلمت عن العاب الهاتف المحمول ... ربما كان يمكنني تحسين الفيديو بدل نفخه بلا هدف لكني راضي عن صورته المصغرة.
+                </p>
+
+                <span class="visit">
+                    PLAY →
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- WORK 3 -->
+
+        <a
+            class="card"
+            href="https://steamcommunity.com/profiles/76561198707570090/"
+            target="_blank"
+        >
+
+            <img
+                src="https://avatars.fastly.steamstatic.com/8af633d3be384515770c8c64c89b15350abb8e55_full.jpg"
+                alt="Video Project"
+            >
+
+            <div class="overlay"></div>
+
+            <div class="card-content">
+
+                <h2>GITHUB🖌️</h2>
+
+                <p>
+                   لمشاهدة ملفات المشروع كاملة ومشاريع الغير المعلنة فقط بدون مفتاح قواعد البيانات الاساسية.
+                </p>
+
+                <span class="visit">
+                    VIEW →
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- WORK 4 -->
+
+        <a
+            class="card"
+            href="https://rapol-yt.github.io/EXIT/ "
+            target="_blank"
+        >
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpTTPdNMfziifLtXzJgqg_gU0xsr80H4lE0gemtzN8nA&s=10"
+                alt="Design Project"
+            >
+
+            <div class="overlay"></div>
+
+            <div class="card-content">
+
+                <h2>EXIT 🚪</h2>
+
+                <p>
+                    سيأدي ذلك للرجوع للموقع الرئيسي....اراك هناك .
+                </p>
+
+                <span class="visit">
+                    EXIT →
+                </span>
+
+            </div>
+
+        </a>
+
+
+    </main>
+
+
+    <footer>
+
+        © 2026 RAPOL YT ——————— اسرقه ..... جرب فقط
+
+    </footer>
+
+
+</body>
+</html>
